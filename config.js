@@ -1,6 +1,6 @@
 module.exports = {
   OWNER_IDS: ["742457036914294855"], // Bot owner ID's
-  SUPPORT_SERVER: "https://discord.gg/WFfjrQxnfH", // Your bot support server
+  SUPPORT_SERVER: "http://lrmn.is-a.dev/server-discord/", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
     DEFAULT_PREFIX: "!", // Default prefix for the bot
@@ -9,7 +9,7 @@ module.exports = {
     SLASH: true, // Should the interactions be enabled
     CONTEXT: true, // Should contexts be enabled
     GLOBAL: true, // Should the interactions be registered globally
-    TEST_GUILD_ID: "xxxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
+    TEST_GUILD_ID: "1109793641058287626", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   EMBED_COLORS: {
     BOT_EMBED: "#068ADD",
@@ -24,7 +24,7 @@ module.exports = {
     MEMBERS: 10000,
   },
   MESSAGES: {
-    API_ERROR: "Unexpected Backend Error! Try again later or contact support server",
+    API_ERROR: "Error! Try again later or contact L RMN",
   },
 
   // PLUGINS
@@ -36,15 +36,15 @@ module.exports = {
   },
 
   DASHBOARD: {
-    enabled: true, // enable or disable dashboard
-    baseURL: "https://lucy.hop.sh", // base url
-    failureURL: "https://lucy.hop.sh/", // failure redirect url
-    port: "8080", // port to run the bot on
+    enabled: process.env.DASHBOARD_ENABLED === "true" || true,
+    baseURL: process.env.DASHBOARD_BASE_URL || "http://localhost:8080",
+    failureURL: process.env.DASHBOARD_FAILURE_URL || "http://localhost:8080",
+    port: process.env.DASHBOARD_PORT || "8080",
   },
 
   ECONOMY: {
     ENABLED: true,
-    CURRENCY: "₪",
+    CURRENCY: "$",
     DAILY_COINS: 100, // coins to be received by daily command
     MIN_BEG_AMOUNT: 100, // minimum coins to be received when beg command is used
     MAX_BEG_AMOUNT: 2500, // maximum coins to be received when beg command is used
@@ -52,19 +52,20 @@ module.exports = {
 
   MUSIC: {
     ENABLED: true,
-    IDLE_TIME: 60, // Time in seconds before the bot disconnects from an idle voice channel
+    IDLE_TIME: 0, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
-    DEFAULT_SOURCE: "YT", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
+    DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
     // Add any number of lavalink nodes here
     // Refer to https://github.com/freyacodes/Lavalink to host your own lavalink server
     LAVALINK_NODES: [
       {
-        host: "lavalink.devamop.in",
-        port: 80,
-        password: "DevamOP",
-        id:"Main",
-        secure: false
+        host: process.env.LAVALINK_HOST || "lavalink.devamop.in",
+        port: process.env.LAVALINK_PORT ? parseInt(process.env.LAVALINK_PORT) : 80,
+        password: process.env.LAVALINK_PASSWORD || "DevamOP",
+        id: process.env.LAVALINK_ID || "Main",
+        secure: process.env.LAVALINK_SECURE === "true" || false,
       },
+      // Tambahkan node Lavalink lainnya sesuai kebutuhan
     ],
   },
 
@@ -104,7 +105,7 @@ module.exports = {
 
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
-    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
+    STATUS: "idle", // The bot's status [online, idle, dnd, invisible]
     TYPE: "PLAYING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
     MESSAGE: "!help or /help", // Your bot status message
   },
@@ -112,7 +113,7 @@ module.exports = {
   STATS: {
     ENABLED: true,
     XP_COOLDOWN: 5, // Cooldown in seconds between messages
-    DEFAULT_LVL_UP_MSG: "{member:tag}, You just advanced to **Level {level}**",
+    DEFAULT_LVL_UP_MSG: "Congratulations {member:tag}, on leveling up **Level {level}** . Keep up the fantastic progress!",
   },
 
   SUGGESTIONS: {

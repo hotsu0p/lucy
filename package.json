@@ -1,9 +1,9 @@
 {
-  "name": "Lucy",
-  "version": "5.4.0",
-  "description": "Hi, my name is Lucy. I’m always online, An open-source, multipurpose discord bot built using discord-js",
+  "name": "discordbot",
+  "version": "latest",
+  "description": "An open-source, multipurpose discord bot built using discord-js",
   "main": "bot.js",
-  "author": "L RMN",
+  "author": "lrmn",
   "license": "ISC",
   "engines": {
     "node": ">=16.11.0"
@@ -12,15 +12,15 @@
     "dev": "nodemon .",
     "start": "node .",
     "format": "prettier --write src",
-    "docker:build": "docker build -t lrmn/Lucy:5.4.0 ."
+    "docker:build": "docker build -t lrmn/lucy:latest ."
   },
-  "homepage": "https://github.com/Hai-Lucy/Lucy#readme",
+  "homepage": "https://github.com/Hai-Lucy/lucy#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hai-Lucy/Lucy.git"
+    "url": "git+https://github.com/Hai-Lucy/lucy.git"
   },
   "bugs": {
-    "url": "https://github.com/Hai-Lucy/Lucy/issues"
+    "url": "https://github.com/Hai-Lucy/lucy/issues"
   },
   "dependencies": {
     "@lavaclient/queue": "^2.1.1",
