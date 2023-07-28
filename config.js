@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 module.exports = {
   OWNER_IDS: ["742457036914294855"], // Bot owner ID's
   SUPPORT_SERVER: "http://lrmn.is-a.dev/server-discord/", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
-    DEFAULT_PREFIX: "!", // Default prefix for the bot
+    DEFAULT_PREFIX: process.env.BOT_PREFIX || "!", // Default prefix for the bot, use the env variable or fallback to "+"
   },
   INTERACTIONS: {
     SLASH: true, // Should the interactions be enabled
@@ -65,7 +67,7 @@ module.exports = {
         id: process.env.LAVALINK_ID || "Main",
         secure: process.env.LAVALINK_SECURE === "true" || false,
       },
-      // Tambahkan node Lavalink lainnya sesuai kebutuhan
+      
     ],
   },
 
@@ -107,7 +109,7 @@ module.exports = {
     ENABLED: true, // Whether or not the bot should update its status
     STATUS: "idle", // The bot's status [online, idle, dnd, invisible]
     TYPE: "PLAYING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "!help or /help", // Your bot status message
+    MESSAGE: "with your 💗", // Your bot status message
   },
 
   STATS: {

@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Hai-Lucy"><img src="https://res.cloudinary.com/lrmn/image/upload/v1685720449/lucycircle_d0shk6.png" height="200" alt="LRMN"></a>
+  <a href="https://github.com/Hai-Lucy"><img src="https://res.cloudinary.com/lrmn/image/upload/v1685720449/lucycircle_d0shk6.png" height="200" alt="Lucy Bot"></a>
   <br>
 Hi, my name is Lucy. I’m always online
   <br>
@@ -26,11 +26,11 @@ Hi, my name is Lucy. I’m always online
 
 ## 🔗 Resource Links
 
-- 🌌 Dashboard: [Dashboard](https://lucy.hop.sh/)
+- 🌌 Dashboard: [Dashboard](https://lucy.hop.sh/selector)
 - 🤖 Demo Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=928966154817523723&permissions=8&scope=bot%20applications.commands)
 - 🤝 Support Server: [Join Here](https://discord.gg/WFfjrQxnfH)
 - 📂 Documentation URL: [Visit Here](https://lucy-docs.is-a.fun)
-- 🐳 Docker Image: [Hub](https://hub.docker.com/r/lrmn/lucy:latest)
+- 🐳 Docker Image: [Hub](https://hub.docker.com/r/hai-lucy/lucy)
 - 🚀 Hoosted: [Hop.io](https://hop.io)
 
 ## 📦 Prerequisites
@@ -44,8 +44,8 @@ Hi, my name is Lucy. I’m always online
 - Open the terminal and run the following commands
 
 ```
-git clone https://github.com/Hai-Lucy/Lucy.git
-cd Lucy
+git clone https://github.com/Hai-Lucy/lucy.git
+cd lucy
 npm install
 ```
 
