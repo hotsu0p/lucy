@@ -14,13 +14,13 @@
     "format": "prettier --write src",
     "docker:build": "docker build -t lrmn/lucy:latest ."
   },
-  "homepage": "https://github.com/lrmn7/lucy#readme",
+  "homepage": "https://github.com/Hai-Lucy/lucy#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lrmn7/lucy.git"
+    "url": "git+https://github.com/Hai-Lucy/lucy.git"
   },
   "bugs": {
-    "url": "https://github.com/lrmn7/lucy/issues"
+    "url": "https://github.com/Hai-Lucy/lucy/issues"
   },
   "dependencies": {
     "@lavaclient/queue": "^2.1.1",
