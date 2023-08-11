@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Hai-Lucy"><img src="https://res.cloudinary.com/lrmn/image/upload/v1685720449/lucycircle_d0shk6.png" height="200" alt="Lucy Bot"></a>
+  <a href="https://github.com/lrmn7"><img src="https://cdn.discordapp.com/attachments/1098969636306960465/1132727644337750156/android-chrome-192x192.png" height="200" alt="LRMN"></a>
   <br>
-Hi, my name is Lucy. I’m always online
+Hi, i'm L RMN.
   <br>
 </h1>
 
@@ -26,11 +26,11 @@ Hi, my name is Lucy. I’m always online
 
 ## 🔗 Resource Links
 
-- 🌌 Dashboard: [Dashboard](https://lucy.hop.sh/)
-- 🤖 Demo Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=928966154817523723&permissions=8&scope=bot%20applications.commands)
+- 🌌 Dashboard: [Dashboard](https://lrmn/selector)
+- 🤖 Demo Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=928711702596423740&permissions=8&scope=bot%20applications.commands)
 - 🤝 Support Server: [Join Here](https://discord.gg/WFfjrQxnfH)
-- 📂 Documentation URL: [Visit Here](https://mkdocs-lucy.vercel.app)
-- 🐳 Docker Image: [Hub](https://hub.docker.com/r/lrmn/lucy)
+- 📂 Documentation URL: [Visit Here](https://lucy-docs.is-a.fun)
+- 🐳 Docker Image: [Hub](https://hub.docker.com/r/lrmn/discordbot:latest)
 - 🚀 Hoosted: [Hop.io](https://hop.io)
 
 ## 📦 Prerequisites
@@ -44,8 +44,8 @@ Hi, my name is Lucy. I’m always online
 - Open the terminal and run the following commands
 
 ```
-git clone https://github.com/Hai-Lucy/lucy.git
-cd lucy
+git clone https://github.com/lrmn7/discordbot.git
+cd discordbot
 npm install
 ```
 

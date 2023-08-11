@@ -54,7 +54,7 @@ module.exports = {
 
   MUSIC: {
     ENABLED: true,
-    IDLE_TIME: 0, // Time in seconds before the bot disconnects from an idle voice channel
+    IDLE_TIME: 10000, // Time in seconds before the bot disconnects from an idle voice channel
     MAX_SEARCH_RESULTS: 5,
     DEFAULT_SOURCE: "SC", // YT = Youtube, YTM = Youtube Music, SC = SoundCloud
     // Add any number of lavalink nodes here
@@ -67,7 +67,7 @@ module.exports = {
         id: process.env.LAVALINK_ID || "Main",
         secure: process.env.LAVALINK_SECURE === "true" || false,
       },
-      
+      // Tambahkan node Lavalink lainnya sesuai kebutuhan
     ],
   },
 
@@ -107,9 +107,9 @@ module.exports = {
 
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
-    STATUS: "idle", // The bot's status [online, idle, dnd, invisible]
-    TYPE: "PLAYING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "with your 💗", // Your bot status message
+    STATUS: "online", // The bot's status [online, idle, dnd, invisible]
+    TYPE: "LISTENING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
+    MESSAGE: "your heart 💖", // Your bot status message
   },
 
   STATS: {
