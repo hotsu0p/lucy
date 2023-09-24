@@ -33,6 +33,9 @@ Hi, my name is Lucy. I’m always online
 - 🐳 Docker Image: [Hub](https://hub.docker.com/r/lrmn/lucy:latest)
 - 🚀 Hoosted: [Hop.io](https://hop.io)
 
+## 🔗 Deploy
+[![Deploy Button](https://cdn.hop.io/assets/deploy-button/button.svg)](https://console.hop.io/deploy-button)
+
 ## 📦 Prerequisites
 
 - [Node.js](https://nodejs.org/en/) v16.11.0 or higher
